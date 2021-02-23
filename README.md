@@ -26,22 +26,29 @@ In this model we used 2 hidden layers with 8 nodes in the first layer and 5 node
 In this optimization the Affiliation and Special Considerations columns are removed as they do not appear to contribute to the accuracy of the model.
 This model gave us an accuracy score of 58.7.
 
-![image_name](https://github.com/jbates2549/neural_network_Charity_Analysis/blob/main/Resources/Optimization_1.PNG)
+![image_name](https://github.com/jbates2549/neural_network_Charity_Analysis/blob/main/Resources/optimization_1.PNG)
 
 
 * 2nd Optimization
 
-For this optimization we increased the hidden layers to 3 with 10 nodes in layer 1, 5 nodes in layer 220.
- ; 
-`
-![image_name](https://github.com/jbates2549/neural_network_Charity_Analysis/blob/main/Resources/Optimization_2.PNG)
+For this optimization we increased the hidden layers to 3 with 10 nodes in layer 1, 5 nodes in layer 2 and 2 nodes in layer 3.  We used the Relu activation model for each hidden layer and Sigmoid for the output layer.  Interestingly the added layers and nodes actually decreased the accuracy of the model to  52.9%.
+
+![image_name](https://github.com/jbates2549/neural_network_Charity_Analysis/blob/main/Resources/optimization_2.PNG)
 
 
-* *3rd Optimization
+* 3rd Optimization
+For this optimization we return to 2 hidden layers with 8 nodes in layer 1 and 5 nodes in layer 2.  The first layer uses Relu activation while the second layer uses Leaky Relu.  We, again, use Sigmoid for the output layer.  This model gives us an accuracy of 56.8%.
 
-![image_name](https://github.com/jbates2549/neural_network_Charity_Analysis/blob/main/Resources/Optimization_3.PNG)
+![image_name](https://github.com/jbates2549/neural_network_Charity_Analysis/blob/main/Resources/optimization_3.PNG)
 
 
 ## Summary
+
+In addition to the optimization models presented, we experimented with various combinations of activation models, layers and nodes.  We also attemped to increase the number of epochs to 500.  Despite these efforts, we were not able to achieve the desired accuracy of 75%.  
+
+For further analysis we recommend an additional analysis using the Random Forest classifier to compare the results to the deep learning model.
+
+
+
 
 
